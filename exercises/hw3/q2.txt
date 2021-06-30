@@ -1,0 +1,86 @@
+a) printf( "%-10d\n", 32100 ); 
+output I expect:
+32100
+
+actual output:
+32100
+
+b) printf( "%c\n", "This is a string" );
+output I expect:
+T
+
+actual output:
+k
+
+I think this should be %s instead of %c
+printf( "%s\n", "This is a string" );
+
+c) printf( "%*.*lf\n", 8, 3, 7124.921654 ); 
+output I expect:
+7124.922
+
+actual output:
+7124.922
+
+
+d) printf( "%#o\n%#X\n%#e\n", 17, 17, 1008.83619 );
+output I expect:
+         0x21
+          0XB
+1.00883619E10
+
+actual output:
+021
+0X11
+1.008836e+03
+
+Okay, the reason I got this wrong is because I thought it would be on the same foramtting, but now I understand each specifyer has unique styling
+
+
+
+
+e) printf( "% ld\n%+ld\n", 1000000, 8000000 ); 
+output I expect:
+ 1000000
++8000000
+
+actual output:
+ 1000000
++8000000
+
+
+
+f) printf( "%10.3E\n", 854.93738 );
+output I expect:
+      8.549
+
+actual output:
+ 8.549E+02
+
+ I got this wrong because I wasn't formatting it as exponet notation. So it would be the way it is because you move the decimal to the left 2 places
+ and add the E +02 to state this movement of decimal
+
+
+g) printf( "%10.3g\n", 264.93738 );
+output I expect:
+      2.649
+
+actual output:
+       265
+
+I think I got this wrong because I don't understand what %g does. However upon reading notes I removed the size specifyer and got the printed
+result 264.937
+
+printf( "%g\n", 264.937 );
+
+h) printf( "%d\n", 10.937 );
+output I expect:
+10
+
+actual output:
+73896
+
+this is different due to the type provided not being a signed int. Therefore it just kinda throws garbage value out to be displayed
+you could fix this by printing
+
+printf( "%f\n", 10.937 );

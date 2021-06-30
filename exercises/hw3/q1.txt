@@ -1,0 +1,76 @@
+a)Print unsigned integer 1001 left justified in a 12-digit field with 6 digits.
+
+    printf("%-12.6u\n", 1001);
+
+b)Print 7.350 in a 8-digit field with preceding zeros.
+
+    printf("%08.3f\n", 7.350);
+
+c)Print 300 with and without a sign.
+
+    printf("%+d\n", 300);
+    printf("% d\n", 300);
+
+d)Print -300 as unsigned number.
+
+    printf("%u\n", -300);
+
+e)Read a hexadecimal value into variable hex.
+
+    scanf(" %x", &hex);
+
+f)Read an octal value into variable octal.
+
+    scanf(" %o", &octal);
+
+g)Print 100 in hexadecimal form preceded by 0x.
+
+    printf("0x%x\n", 100;)
+
+h)Print 100 in octal form preceded by 0.
+
+    printf("%o\n", 100);
+
+i)Read characters into array m until the letter z is encountered.
+
+    char temp;
+    char m[1000];
+    int i = 0;
+
+    while(temp != 'z'){
+        printf("Enter 1 character and press ENTER\n");
+        scanf(" %c", &temp);
+
+        m[i] = temp;
+
+        i++;
+    }
+
+    printf("%s\n", m);
+
+j)Read a time of the form hh-mm-ss, storing the parts of the time in the integer variables hour, minute and second. 
+Skip the dash (-) in the input stream. Use the assignment suppression character.
+
+    int hour;
+    int minute;
+    int second;
+
+    scanf("%d-%d-%d", &hour, &minute, &second);
+
+k)Read a time of the form hh:mm:ss, storing the parts of the time in the integer variables hour, minute and second. 
+Skip the colons (:) in the input stream. Do not use the assignment suppression character.
+
+    int hour;
+    int minute;
+    int second;
+
+    scanf("%d:%d:%d", &hour, &minute, &second);
+
+l)Read a string of the form "characters" from the standard input. Store the string in character array s. Eliminate 
+the quotation marks from the input stream.
+
+    char word[100];
+    
+    scanf("\"%8[^\"]", word);
+
+

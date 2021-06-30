@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "game_window.h": "c",
+        "math.h": "c"
+    }
+}

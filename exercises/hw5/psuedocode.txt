@@ -1,0 +1,65 @@
+PSUEDOCODE:
+initialize the 2d matrix of strings that represents planne
+Display a menu
+    ex:
+    1.Choose a seat
+    2.Print Boarding Pass
+    3.Display Seating Chart
+    4.Print Manifest
+    5.Quit
+if 5:
+    end loop
+if 4:
+    loop over all seats and print out their value
+    ex:
+    Jane B12
+    Joe C10
+elif 3:
+    loop over all seats and print value in formatted way
+    ex:
+    John Joe  Jake Joey Joseph Jamil Jessica
+    yada yada yada yada yada   yada  yada
+    etc....
+else;
+    take user input on name, level, and seat #
+    if 1:
+        initialize vars
+        randomSeat, window/aisle preference, available, chooseSeat, changeSeat
+        repeat 3 times
+            repeat while not availalble:
+                if window seat desired
+                    randomSeat +=  a / f 
+                else
+                    randomSeat +=  b/c/d/e
+                if level == f/F
+                    randomSeat += random row between 1 - 3
+                else if level == b/B
+                    randomSeat += random row between 4 - 7
+                else 
+                    randomSeat += random row between 8 - 15
+                if randomSeat is not taken
+                    available = true
+            ask if user wants seat and save to chooseSeat
+            if chooseSEat is true
+                passing the seat to be taken by the user in 2d matrix
+                break
+            if loop is on 3rd time 
+                notify user they will have to fly on the next plane out
+            upgrade/downgrade code 
+            ask the user if they would like to upgrade or downgrade save to upgrade_seat
+            if change seat is upgrade
+                if seat preference open in higher class
+                    print final seat assignment
+                else 
+                    print next flight leaves in 3 hours
+            if change seat is donwgrade
+                if seat preference open in lower class
+                        print final seat assignment
+                    else 
+                        print next flight leaves in 3 hours
+    else:
+        if proper passenger info:
+            print the specified format
+            ex: JOHN DOE, SEAT: B2, Level: First Class
+        else
+            print seat unassigned no boarding pass available
